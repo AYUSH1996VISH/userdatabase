@@ -1,0 +1,132 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(185, 160, 185);
+    padding: 0 10px;
+}
+.container{
+max-width: 900px;
+align-items: center;
+width: 100%;
+text-align: justify;
+background-color: rgb(250, 234, 214);
+margin: 20px auto;
+padding: 30px;
+box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
+}
+.container .title{
+font-size: 24px;
+font-weight: 800px;
+text-align: center;
+margin-bottom: 20px;
+color: rgb(78, 106, 151);
+
+}
+.container .form
+{
+    width: 100%;
+}
+.container .form .intput_user{
+
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.container .form .intput_user label{
+    width: 200px;
+    margin: 10px;
+
+}
+.container .form .intput_user .input,
+.container .form .intput_user .textarea,
+.container .form .intput_user .selectbox{
+    width: 30%;
+    outline: none;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 8px 5px 5px;
+    border-radius: 3px;
+    background-color: antiquewhite;
+    transition: all 0.5s ease;
+    resize: none;
+    max-height: 40px;
+}
+.container .form .intput_user .selectbox{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.container .form .intput_user .selectbox::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+}
+.container .form .intput_user .input:focus,
+    .container .form .intput_user .textarea:focus{
+    border: 2px solid skyblue;
+}
+.container .form .intput_user p{
+    font-size: 14px;
+    color: #757575;
+}
+.container .form .intput_user .check{
+    width: 15px;
+    height: 15px;
+    align-content: center;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.container .form .intput_user .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* opacity: 0; */
+}
+.container .form .intput_user .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fec107;
+    display: block;
+    position: relative;
+    /* background: green; */
+}
+.container .form .intput_user .check .checkmark:before{
+content="";
+position: absolute;
+top: 0;
+left: 0;
+width: 5px;
+height: 2px;
+border: 2px solid;
+border-color: transparent transparent white white;
+
+}
+.container .form .intput_userc.btn{
+width: 100% !important;
+padding: 10px;
+
+}
+
+@media(max-width:450px)
+{
+    .container .form .intput_user{
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+}
+.container .form .intput_user lable{
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+}
+div .input_user .btn:hover {
+    background-color: #00e047;
+  }
+  
